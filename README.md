@@ -47,6 +47,7 @@ Pynoi hard-codes the two-disc solution and then applies a the above recursive de
 ### In action
 
 #### Initialize a new puzzle with 4 discs.
+
 ```python
 from pynoi import TowersOfHanoi
 
@@ -54,11 +55,15 @@ puz = TowersOfHanoi(4)
 print(puz)
 ```
 ```
-[4, 3, 2, 1], [], []]
+[[4, 3, 2, 1], [], []]
 ```
 
+The puzzle is printed as a list of lists. Each inner list represents a post, and its contents are printed from bottom to top, where larger numbers means larger discs. Thus, the above representation shows a puzzle with four discs on the left-most post (biggest on the bottom, smallest on the top), and the middle and right posts empty.
+
 #### Automatically solve the puzzle.
+
 (Verbose mode is default.)
+
 ```python
 puz.solve()
 ```
@@ -81,12 +86,14 @@ puz.solve()
 solved in 15 steps
 ```
 
-Puzzle state is maintained.
+The move notation for a verbose solution is the number of the move, followed by the starting and ending posts in parentheses, and then a representation of the puzzle after the move.
+
+Note that puzzle state is maintained:
 ```python
 print(puz)
 ```
 ```
-[4, 3, 2, 1], [], []]
+[[4, 3, 2, 1], [], []]
 ```
 
 #### Methods are exposed for manually manipulating the puzzle.
