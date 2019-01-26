@@ -11,7 +11,7 @@ This gif from [Wikipedia](https://commons.wikimedia.org/wiki/File:Tower_of_Hanoi
 
 ![](https://upload.wikimedia.org/wikipedia/commons/4/4f/Tower_of_Hanoi.gif)
 
-(The gif was created by André Karwath and is made available under the [(CC BY-SA 2.5)](https://creativecommons.org/licenses/by-sa/2.5/deed.en) license.
+(The gif was created by André Karwath and is made available under the [(CC BY-SA 2.5)](https://creativecommons.org/licenses/by-sa/2.5/deed.en) license.)
 
 ### Recursive approach
 
@@ -86,7 +86,7 @@ Puzzle state is maintained.
 print(puz)
 ```
 ```
-[[], [], [4, 3, 2, 1]]
+[4, 3, 2, 1], [], []]
 ```
 
 #### Methods are exposed for manually manipulating the puzzle.
@@ -95,6 +95,14 @@ puz.move(3,2)
 ```
 ```
 (3,2): [[], [1], [4, 3, 2]]
+```
+
+```python
+puz.reset()
+print(puz)
+```
+```
+[[], [], [4, 3, 2, 1]]
 ```
 
 #### Illegal moves are forbidden.
