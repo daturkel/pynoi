@@ -102,7 +102,7 @@ puz.reset()
 print(puz)
 ```
 ```
-[[], [], [4, 3, 2, 1]]
+[4, 3, 2, 1], [], []]
 ```
 
 #### Illegal moves are forbidden.
