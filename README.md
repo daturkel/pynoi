@@ -1,6 +1,11 @@
 # pynoi
 ## A recursive solution to Towers of Hanoi implemented in python.
 
+1. [Background](#background)
+2. [Solving method](#solving-method)
+3. [See it in action](#see-it-in-action)
+4. [Contributing](#contributing)
+
 ### Background
 
 [Towers of Hanoi](https://en.wikipedia.org/wiki/Tower_of_Hanoi) is a puzzle where a stack of disks, decreasing in size from bottom to top, sit on one of three pegs and the player's objective is to move the stack to another peg without ever placing a larger disk on top of a smaller one. Only one piece can be moved at a time.
@@ -13,7 +18,7 @@ This gif from [Wikipedia](https://commons.wikimedia.org/wiki/File:Tower_of_Hanoi
 
 (The gif was created by André Karwath and is made available under the [(CC BY-SA 2.5)](https://creativecommons.org/licenses/by-sa/2.5/deed.en) license.)
 
-### Recursive approach
+### Solving Method
 
 There are many ways to formulate the minimal solution to Towers of Hanoi, but the one I found easiest to implement was a recursive approach. We can think of the simplest nontrivial variant of the puzzle as the one with two discs, and the solution is such:
 
@@ -44,7 +49,7 @@ Applying this logic, a puzzle with n discs can always be solved by moving the to
 
 Pynoi hard-codes the two-disc solution and then applies a the above recursive definition to solve the puzzle for any number of discs.
 
-### In action
+### See it in action
 
 #### Initialize a new puzzle with 4 discs.
 
@@ -147,3 +152,6 @@ print(f'and {d} seconds')
 solved in 16777215 steps
 and 21.579 seconds
 ```
+
+### Contributing
+Please feel free to fork and submit a pull request for improvements or new solving methods. Make use of the Github Issues feature to submit bug reports or feature requests.
